@@ -1,4 +1,3 @@
-// const API_KEY = "aac1abcedb0848bfc0f613c2d6264e4e";
 const BASE_API_URL = "http://localhost:3000"
 
 export const getPopularMovies = async () => {
