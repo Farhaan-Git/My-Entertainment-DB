@@ -1,0 +1,71 @@
+.Movie-details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /*need to remove */
+}
+
+.major-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+    align-items: start;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.major-details img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.attributes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.attributes span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #cccccc;
+}
+
+.overview, .Review {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.overview h3, .Review h3 {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.overview p, .Review p {
+    color: #bdbdbd;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .major-details {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .attributes {
+        align-items: center;
+    }
+
+    .major-details img {
+        margin: 0 auto;
+    }
+}

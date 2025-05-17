@@ -1,0 +1,114 @@
+.add-to-fav {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgb(18, 18, 18);
+  color: rgb(224, 224, 224);
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.add-to-fav img {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.add-to-fav .minor-details {
+  text-align: center;
+}
+
+.add-to-fav .minor-details h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.add-to-fav .minor-details p {
+  font-size: 1rem;
+  color: rgb(176, 176, 176);
+}
+
+.add-to-fav form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: rgb(30, 30, 30);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.add-to-fav form label {
+  font-size: 1rem;
+  color: rgb(204, 204, 204);
+}
+
+.add-to-fav form input[type="date"],
+.add-to-fav form textarea {
+  background-color: rgb(42, 42, 42);
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 8px;
+  padding: 0.75rem;
+  color: rgb(224, 224, 224);
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-to-fav textarea.review {
+  min-height: 100px;
+  resize: none;
+}
+
+.add-to-fav button[type="submit"] {
+  background-color: rgb(98, 0, 234);
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-fav button[type="submit"]:hover {
+  background-color: rgb(55, 0, 179);
+}
+
+.add-to-fav .submitted {
+  background-color: rgb(30, 30, 30);
+  padding: 1rem;
+  color: rgb(165, 214, 167);
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+.add-to-fav .submitting,
+.add-to-fav .error {
+  text-align: center;
+  font-size: 1.1rem;
+  color: rgb(244, 67, 54);
+}
+
+@media (max-width: 768px) {
+  .add-to-fav {
+    padding: 1rem;
+  }
+
+  .add-to-fav form {
+    padding: 1rem;
+  }
+
+  .add-to-fav img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
