@@ -1,0 +1,5 @@
+
+# home page sort by last seen as default
+# add movie genre to movies 
+# popular movies page creation 
+# .......

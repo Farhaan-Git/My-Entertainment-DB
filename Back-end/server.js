@@ -1,4 +1,4 @@
-import express, { response } from 'express'
+import express from 'express'
 import cors from 'cors'
 import pool from './db.js'
 import dotenv from 'dotenv'
@@ -63,7 +63,6 @@ app.get('/api/v1/search', async (req,res)=>{
 
 app.post("/api/v1/addtofavourites", async (req,res)=>{
     const elementToAdd = req.body ;
-    console.log(elementToAdd);
     const values = Object.values(elementToAdd);
     try{
         const temp = await pool.query(`INSERT INTO favourites_table (

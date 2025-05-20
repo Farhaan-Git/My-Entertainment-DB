@@ -56,16 +56,17 @@ function AddToFavourites() {
         // navigate("/");
     }
     catch(err){
-        console.log(err)
         setError("Failed to submit");
     }
     finally{
         setLoading(false);
+        setTimeout(()=>setSubmitStage(false),4000);
     }
     console.log("Submited favourite:");
   };
   return (
     <>
+    {error && <div className="error">Not submitted...</div>}
     {submitStage && <div className="submitted">Submitted sucessfully...</div>}
     {loading? (<div className="submitting"> submitting the form</div>) : <div className="add-to-fav">
       <img

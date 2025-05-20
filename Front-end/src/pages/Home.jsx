@@ -22,7 +22,6 @@ function Home(){
                 setMovies(favourites.data);
              }   
              catch(err){
-                console.log(err)
                 setError(err);
              }
              finally{
@@ -32,14 +31,6 @@ function Home(){
 
         loadFavourites();
     },[]) 
-
-    // let movies = [
-    //     {id:1,title:"Hello",release_date:"2021"},
-    //     {id:2,title:"Byee",release_date:"2025"},
-    //     {id:3,title:"Rockstar",release_date:"2012"},
-    //     {id:4,title:"UP",release_date:"2015"},
-    //     {id:5,title:"It",release_date:"2018"},
-    // ];
 
     const [searchQuery,setSearchQuery] = useState("");
 
@@ -60,7 +51,6 @@ function Home(){
 
         }
         catch(err){
-            console.log(err)
             setError("Failed to search");
         }
         finally{
@@ -68,9 +58,6 @@ function Home(){
         }
         setSearchQuery("")
     }
-
-    
-
 
     return (
         <div className="home">

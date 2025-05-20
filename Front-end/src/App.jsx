@@ -1,4 +1,4 @@
-import Favourites from "./pages/Favourites";
+import Popular from "./pages/Popular";
 import Home from "./pages/Home";
 import {Routes,Route} from 'react-router-dom'
 import NavBar from "./components/Nav-Bar";
@@ -13,7 +13,7 @@ function App() {
     <main>
       <Routes>
         <Route path="/" element= {<Home/>}/>
-        <Route path="/favourites" element={<Favourites/>} />
+        <Route path="/popular" element={<Popular/>} />
         <Route path="/moviedetails" element = {<MovieDetails/>} />
         <Route path="/addtofavourites" element ={<AddToFavourites/>}/>
       </Routes>
